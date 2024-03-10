@@ -17,6 +17,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 
@@ -27,6 +34,7 @@
             <a href="#" class="logo">Jms</a>
             <div class="nav__menu">
                 <ul class="nav__list">
+                    <button class="btn__burguer"><i class="fa-solid fa-bars"></i></button>
                     <li class="nav__items">
                         <a href="#" class="nav__link">INICIO</a>
                     </li>
@@ -43,8 +51,9 @@
                         <a href="#proyectos" class="nav__link">PROYECTOS</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#contatos" class="nav__link">CONTACTO</a>
+                        <a href="#contacto" class="nav__link">CONTACTO</a>
                     </li>
+                    <button class="btn__cerrar"><i class="fa-solid fa-square-xmark"></i></button>
                 </ul>
             </div>
         </nav>
@@ -57,7 +66,7 @@
             </div>
             <div class="diver">
                 <div class="textcontainer">
-                    <span class="title">HOLA!</span>
+                    <span class="title">HOLA! </span>
                     <span class="title">MI NOMBRE ES JESUS SANCHEZ</span>
                     <span class="text">Desarrollador Web Full-Stack</span>
                 </div>
@@ -80,10 +89,16 @@
                     consectetur deleniti recusandae quaerat!</span>
                 <span class="firma">Jesus Sanchez</span>
                 <div class="redes">
-                    <a href="#" class="link" target="_blank"><i class="fa-brands fa-linkedin-in"> </i></a>
-                    <a href="#" class="link" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="link" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="link" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/jes%C3%BAs-manuel-s%C3%A1nchez-6a925318a/" class="link"
+                        target="_blank"><i class="fa-brands fa-linkedin-in"> </i></a>
+                    <a href="https://github.com/JmanuelS1" class="link" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/jmanuel.sanchez.18/" class="link" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/" class="link" target="_blank"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://es.wikipedia.org/wiki/Colombia" class="link" target="_blank"><i
+                            class="fa-solid fa-earth-americas"></i></i></a>
                 </div>
             </div>
             <div class="sobremi__img">
@@ -94,7 +109,10 @@
 
     <!-- EDUCACION -->
     <section id="educacion" class="educacion">
+
         <div class="container__educacion">
+
+
             <div class="container__formacion">
                 <div class="educacion__formacion">
                     <div class="formacion__img">
@@ -110,8 +128,9 @@
                             rerum.</span>
                     </div>
                 </div>
-                <div class="educacion__formacion">
 
+
+                <div class="educacion__formacion">
                     <div class="formacion__img">
                         <img src="./assets/imgs/IUTAC.jpg" alt="IUTAC">
                     </div>
@@ -285,24 +304,27 @@
 
     <!-- PROYECTOS -->
     <section id="proyectos" class="proyectos">
-        <div class="container__proyectos">
-            <div class="proyectos__title">
-                <span>MIS</span>
-                <span class="alt">PROYECTOS</span>
+        <div class="case-study-gallery">
+            <h1 class="titleone">MIS PROYECTOS</h1>
+            <p class="p1">Esta es mi galeria de proyectos Bienvenidos!</p>
+            <div class="case-study study1">
+                <figure>
+                    <img class="case-study__img" src="./assets/imgs/pokemon.png" alt="pokemon" />
+                </figure>
+                <div class="case-study__overlay">
+                    <h2 class="case-study__title">Desarrollado por Jms</h2>
+                    <a class="case-study__link" href="#">Ver Proyecto</a>
+                </div>
             </div>
-            <div class="proyectos__text">
-                <span class="texttitle">Ejemplos de mis proyectos:</span>
-                <span class="textmain">Explora una selección de mis proyectos pasados y actuales. Cada proyecto es una
-                    muestra de mi creatividad y experiencia en acción, y representa los desafíos que estoy dispuesto a
-                    enfrentar.</span>
 
-            </div>
-            <div class="proyectos__img">
-                <section class="galeria">
-                    <img class="img1" src="/assets/imgs/pokemon.png" alt="pokeapi" class="pokeapi">
-                    <img class="img2" src="/assets/imgs/rym2.png" alt="rym" class="rym">
-                    <img class="img3" src="/assets/imgs/portfolio.png" alt="portafolio" class="portafolio">
-                </section>
+            <div class="case-study study6">
+                <figure>
+                    <img class="case-study__img" src="./assets/imgs/rym2.png" alt="RyM" />
+                </figure>
+                <div class="case-study__overlay">
+                    <h2 class="case-study__title">Desarrollado por Jms</h2>
+                    <a class="case-study__link" href="#">Ver Proyecto</a>
+                </div>
             </div>
         </div>
     </section>
@@ -312,7 +334,9 @@
         <div class="container__contacto">
             <div class="contacto__text">
                 <span class="text__title">Hablemos sobre tu proximo proyecto:</span>
-                <span class="text__par">¿Listo para dar el siguiente paso? Ponte en contacto conmigo para discutir cómo puedo ayudarte a lograr tus metas. Estoy ansioso por conocer tus ideas y trabajar juntos para convertirlas en realidad.</span>
+                <span class="text__par">¿Listo para dar el siguiente paso? Ponte en contacto conmigo para discutir cómo
+                    puedo ayudarte a lograr tus metas. Estoy ansioso por conocer tus ideas y trabajar juntos para
+                    convertirlas en realidad.</span>
             </div>
 
             <form class="contacto__form">
@@ -323,12 +347,14 @@
                 </div>
 
                 <div class="contact__input">
-                    <input id="email" class="contact__inputtext" type="email" name="email" placeholder="Correo" required>
+                    <input id="email" class="contact__inputtext" type="email" name="email" placeholder="Correo"
+                        required>
                     <label for="email" class="contact__label"></label>
                 </div>
 
                 <div class="contact__description">
-                    <textarea id="description" class="contact__inputtext" name="description" placeholder="Mensaje" rows="10" required></textarea>
+                    <textarea id="description" class="contact__inputtext" name="description" placeholder="Mensaje"
+                        rows="10" required></textarea>
                     <label for="description" class="contact__label"></label>
                 </div>
                 <div class="contact__btn">
@@ -340,11 +366,23 @@
             </form>
 
             <div class="contacto__title">
-                <span>MI</span>
+                <span class="titulo">MI</span>
                 <span class="alt">CONTACTO</span>
             </div>
         </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="contain__footer">
+            <span class="firma">Jms</span>
+            <div class="footer__mid">
+                <span class="span2">Desde COLOMBIA</span>
+                <img class="mapa" src="./assets/imgs/colombia.png" alt="colombia">
+            </div>
+            <p class="parrafo">© 2024 Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 </body>
 
