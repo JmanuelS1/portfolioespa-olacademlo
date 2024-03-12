@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTAFOLIO JESUS MANUEL</title>
+    <title>JESUS MANUEL SANCHEZ</title>
     <link rel="icon" href="./assets/imgs/JmsIconamarillo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,48 +17,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 
 <body>
+
+
+
     <!-- HEADER -->
+
+
     <header class="header">
-        <nav class="container">
-            <a href="#" class="logo">Jms</a>
+        <nav class="header__nav">
+            <a href="/" class="logo">Jms</a>
+
             <div class="nav__menu">
-                <ul class="nav__list">
-                    <button class="btn__burguer"><i class="fa-solid fa-bars"></i></button>
+
+                <button type="button" class="cerrar__btn" aria-label="cerrar"><i class="fa-solid fa-square-xmark"></i>
+                </button>
+
+                <ul class="nav__list">                    
                     <li class="nav__items">
                         <a href="#" class="nav__link">INICIO</a>
                     </li>
+
                     <li class="nav__items">
                         <a href="#sobremi" class="nav__link">SOBRE MI</a>
                     </li>
+
                     <li class="nav__items">
                         <a href="#educacion" class="nav__link">EDUCACION</a>
                     </li>
+
                     <li class="nav__items">
                         <a href="#habilidades" class="nav__link">HABILIDADES</a>
                     </li>
+
                     <li class="nav__items">
-                        <a href="#proyectos" class="nav__link">PROYECTOS</a>
+                        <a href="#proyectos" class="nav__link">PROYECTOS</a> 
                     </li>
+
                     <li class="nav__items">
-                        <a href="#contacto" class="nav__link">CONTACTO</a>
-                    </li>
-                    <button class="btn__cerrar"><i class="fa-solid fa-square-xmark"></i></button>
-                </ul>
-            </div>
-        </nav>
+                        <a href="#contacto" class="nav__link">CONTACTO</a> </li>
+                    </ul>
+                </div>
+            </nav>
+            <button type="button" class="menu__btn" aria-label="abrir"><i class="fa-solid fa-bars"></i></button>
     </header>
+
+
     <!-- HERO -->
+
     <main class="cont_main">
         <div class="container_main">
             <div class="container--foto">
@@ -67,7 +82,9 @@
             <div class="diver">
                 <div class="textcontainer">
                     <span class="title">HOLA! </span>
+                    <hr>
                     <span class="title">MI NOMBRE ES JESUS SANCHEZ</span>
+                    <hr>
                     <span class="text">Desarrollador Web Full-Stack</span>
                 </div>
             </div>
@@ -75,7 +92,10 @@
 
     </main>
 
+
     <!-- SOBRE MI -->
+
+
     <section id="sobremi" class="sobremi">
         <div class="container__sobremi container">
             <div class="sobremi__title">
@@ -107,7 +127,10 @@
         </div>
     </section>
 
+
+
     <!-- EDUCACION -->
+
     <section id="educacion" class="educacion">
 
         <div class="container__educacion">
@@ -170,9 +193,13 @@
                 <span class="alt">EDUCACIÓN</span>
             </div>
         </div>
-    </section>
+    </section> 
+
+
 
     <!-- HABILIDADES -->
+
+
     <section id="habilidades" class="habilidades">
         <container class="container__habilidades">
             <div class="habilidades__title">
@@ -302,7 +329,10 @@
         </container>
     </section>
 
+
     <!-- PROYECTOS -->
+
+
     <section id="proyectos" class="proyectos">
         <div class="case-study-gallery">
             <h1 class="titleone">MIS PROYECTOS</h1>
@@ -329,7 +359,11 @@
         </div>
     </section>
 
+
+
     <!-- CONTACTO-->
+
+
     <section id="contacto" class="contacto">
         <div class="container__contacto">
             <div class="contacto__text">
@@ -372,7 +406,11 @@
         </div>
     </section>
 
+
+
     <!-- FOOTER -->
+
+
     <footer class="footer">
         <div class="contain__footer">
             <span class="firma">Jms</span>
@@ -383,7 +421,9 @@
             <p class="parrafo">© 2024 Todos los derechos reservados.</p>
         </div>
     </footer>
+    
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+    <script src='./assets/js/main.js' type="module" defer></script>
 
 </body>
-
 </html>
