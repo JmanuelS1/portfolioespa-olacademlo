@@ -1074,11 +1074,11 @@ main {
         width: 87%;
         justify-content: center;
         background-color: #222;
-        margin-left: 100px;
+        margin-left: 46px;
         padding-top: 50px;
         padding-bottom: 50px;
         top: 60px;
-        left: -100%;
+        left: -115%;
         transition: right .3s;
         line-height: 1.8rem;
     }
@@ -1253,16 +1253,6 @@ main {
         height: 600px;
     }
 
-    .container__experiencia {
-        width: 33%;
-        height: 20%;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        margin-left: 0px;
-        padding-left: 90px;
-    }
 
     .content--txt {
         display: none;
@@ -1308,8 +1298,9 @@ main {
     }
     
     .container__formacion{
-        width: 60%;
-        padding-right: 100px;
+        width: 70%;
+        margin-right: 10px;
+        padding-right: 10px;
     }
 
     .container__experiencia{
@@ -1400,6 +1391,7 @@ main {
         /* position: relative; */
         top: 25px;
         margin-right: unset;
+        margin-left: 11px;
     }
 
     .titleone {
