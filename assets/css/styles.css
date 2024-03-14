@@ -264,11 +264,11 @@ main {
 }
 
 .sobremi__title {
-    width: 28%;
+    width: 20%;
     display: flex;
     flex-direction: column;
-    align-content: flex-end;
-    margin-top: 200px;
+    justify-content: center;
+    margin-top: 80px;
     margin-left: 20px;
 }
 
@@ -284,7 +284,7 @@ main {
 }
 
 .sobremi__text {
-    width: 40%;
+    width: 48%;
     display: flex;
     flex-direction: column;
     padding-top: 50px;
@@ -803,11 +803,11 @@ main {
 .case-study__title {
     position: relative;
     top: -200px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-top: 4rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: 'Oswald';
-    font-weight: 100;
+    font-weight: 50;
     color: white;
     text-align: center;
     letter-spacing: 5px;
@@ -863,6 +863,14 @@ main {
     width: 25%;
     background-image: url('http://www.bedlammag.com/wp-content/uploads/2014/04/unsplash-love-yourself-article-e1397699812178.jpg');
 
+}
+
+.imgPostgres{
+}
+
+.imgReact{
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -1294,7 +1302,7 @@ main {
         transform: rotate(0.75turn);
         order: -1;
         position: relative;
-        top: 190px;
+        top: 60px;
     }
     
     .container__formacion{
