@@ -121,6 +121,9 @@ button {
     margin: 0;
 }
 
+main {
+    overflow: hidden;
+}
 
 
 
@@ -128,7 +131,7 @@ button {
 /*CONFIGURACION DEL HEADER*/
 
 
- .header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -146,9 +149,9 @@ button {
     align-items: center;
     margin: 0 auto;
     width: 1024px;
-} 
+}
 
-.nav__menu{
+.nav__menu {
     width: 80%;
     display: flex;
     justify-content: flex-end;
@@ -159,18 +162,19 @@ button {
     font-size: var(--big-font);
     width: 20%;
     padding-left: 8px;
-} 
+}
 
- .nav__list {
+.nav__list {
     height: 70%;
     display: flex;
     font-size: var(--small-font);
-    padding-left: 80px; 
-     font-weight: bold; 
- } 
+    padding-left: 80px;
+    font-weight: bold;
+}
 
- .nav__items {
-    margin-right: 20px;    ;
+.nav__items {
+    margin-right: 20px;
+    ;
 }
 
 .nav__link:hover {
@@ -178,13 +182,13 @@ button {
     width: 10%;
 }
 
-.menu__btn {  
+.menu__btn {
     display: none;
 }
 
 .cerrar__btn {
     display: none;
-} 
+}
 
 /*ESTE ES LA 1ra SECTION HERO*/
 
@@ -310,10 +314,10 @@ button {
 }
 
 .sobremi__text .redes {
+    width: 60%;
+    display: flex;
     padding-bottom: 20px;
     font-size: var(--medium-font);
-    display: flex;
-    width: 60%;
     justify-content: space-between;
     text-align: center;
     gap: 6px
@@ -690,36 +694,51 @@ button {
     width: 100%;
 }
 
+.proyectos__title {
+    width: 50%;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    font-size: var(--big-font);
+    font-family: var(--title-font);
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.15;
+    margin-top: 20px;
+}
 
+.titleone {
+    font-family: var(--title-font);
+    color: var(--primary-color);
+
+}
+
+.titletwo {
+    font-family: var(--title-font);
+    /* color: var(--text-colorr);
+    text-align: center;
+    font-size: var(--medium-font);
+    padding-bottom: 30px; */
+}
 
 /*  GALERIA DE PROYECTOS  */
 
-
-
-.titleone {
+.proyecto__figura {
     text-align: center;
-    font-family: 'Oswald';
-    font-weight: 20px;
-    font-size: 3.75rem;
-    letter-spacing: 5px;
-    background: linear-gradient(rgba(255, 0, 0, 0), #444, rgba(255, 0, 0, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 0;
+}
 
-    @media screen and (min-width:37.5em) {
-        font-size: 4.75rem;
-    }
+.proyecto__figura img {
+    display: block;
 }
 
 .p1 {
     margin: 0 auto 2rem;
     text-align: center;
-    font-family: 'oswald';
+    font-family: var(--title-font);
     font-size: 1.50rem;
-    color: #444;
-    font-weight: 100;
-    width: 90%;
+    color: #222;
+    font-weight: bold;
 
     @media screen and (min-width:37.5em) {
         height: 70%;
@@ -728,17 +747,19 @@ button {
 }
 
 .case-study-gallery {
-    margin-top: 50px;
+    display: flex;
     width: 1024px;
     margin: 50px auto;
+    justify-content: space-between;
+
 }
 
 .case-study {
     position: relative;
     display: block;
-    width: 90%;
+
+    /* width: 50%; */
     height: 250px;
-    margin: 0 auto 2rem;
     background-size: cover;
     border-radius: 10px;
     box-shadow: 0px 25px 50px rgba(0, 0, 0, .5);
@@ -751,19 +772,10 @@ button {
 
     @media screen and (min-width:45em) {
         display: inline-block;
-        width: 45%;
+        width: 50%;
         margin-left: 25px;
     }
 }
-
-
-.case-study__img {
-    width: 90%;
-    display: block;
-    margin-top: 50%;
-    margin: 0 auto;
-}
-
 
 
 .case-study__overlay {
@@ -793,7 +805,7 @@ button {
     top: -200px;
     margin-bottom: 2rem;
     margin-top: 4rem;
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     font-family: 'Oswald';
     font-weight: 100;
     color: white;
@@ -807,7 +819,6 @@ button {
     display: block;
     width: 60%;
     top: 200px;
-    padding: 10px;
     margin: 0 auto;
     font-family: 'Oswald';
     color: white;
@@ -816,7 +827,7 @@ button {
     text-align: center;
     border: 2px solid white;
     border-radius: 3px;
-    font-size: 1.25em;
+    font-size: 1.1em;
     transition: all .3s cubic-bezier(.3, 0, 0, 1.3);
 
     &:hover {
@@ -842,92 +853,18 @@ button {
 }
 
 .study1 {
+    width: 25%;
+    margin-right: 15px;
+
     background-image: url('http://www.bedlammag.com/wp-content/uploads/2014/04/unsplash-love-yourself-article-e1397699812178.jpg');
 }
 
 .study6 {
+    width: 25%;
     background-image: url('http://www.bedlammag.com/wp-content/uploads/2014/04/unsplash-love-yourself-article-e1397699812178.jpg');
 
 }
 
-
-/* .container__proyectos {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 1024px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
-
-.proyectos__title {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;
-}
-
-.proyectos__title span {
-    font-size: var(--big-font);
-    font-family: var(--title-font);
-    font-weight: bold;
-    line-height: 1;
-}
-
-.proyectos__title .alt {
-    color: var(--primary-color)
-}
-
-.proyectos__text {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-}
-
-
-.proyectos__text span {
-    padding-right: 20px;
-}
-
-
-.proyectos__text .texttitle {
-    font-weight: bold;
-    font-size: 1.40rem;
-    padding-bottom: var(--sp-1);
-}
-
-.proyectos__text .textmain {
-    font-size: var(--small-font);
-    padding-bottom: var(--sp-1);
-}
-
-.proyectos__img {
-    display: flex;
-    overflow: hidden;
-    width: 35%;
-}
-
-.galeria {
-    display: flex;
-    width: 100%;
-    height: 300px;
-}
-
-.galeria img {
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .4;
-    transition: .5 ease;
-}
-
-.galeria img:hover {
-    cursor: pointer;
-    width: 150px;
-    opacity: 1;
-    filter: contrast(120%);
-} */
 
 /*ESTE ES LA 6ta SECTION*/
 
@@ -958,12 +895,11 @@ button {
 }
 
 .contacto__form {
-    width: 55%;
+    width: 50%;
     padding: 20px 50px 20px 100px;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-
 }
 
 .contacto__title {
@@ -1091,12 +1027,12 @@ button {
     /* font-weight: bold; */
 }
 
-.contenedor__prueba{
+.contenedor__prueba {
     display: flex;
     background-color: var(--text-color);
     border: 5px solid black;
-   width: 100vw;
-   height: 100vh;
+    width: 100vw;
+    height: 100vh;
 
 }
 
@@ -1115,96 +1051,73 @@ button {
 /*RESPONSIVE*/
 
 
-@media (max-width: 768px) {    
+@media (max-width: 768px) {
 
- 
+
+
+
+
     /*CONFIGURACION DEL HEADER*/
 
-.header__nav{
-    width: 100%;
-    /* margin: 0; */
-}
-
-.nav__menu{
-    position: fixed;
-    width: 85%;
-    background-color: #222;
-    padding: 60px 40px;
-    top: 90px;
-    left: -100%;
-    transition: right .3s;
-}
-
-.menu__btn{
-    display: flex;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-top: 15px;
-    padding-right: 20px;
-    font-size: 30px;
-}
-
-
-.show--menu {
-   left: 0;
-  }
-
-  .cerrar__btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #fff;
-    font-size: 32px;
-    display: flex;
-  }
-
-  .nav__link {
-    color: #fff;
-  }
-
-  .nav__list {
-    flex-direction: column;
-  }
-
-/*   
-@media (min-width: 768px) {
-    .cerrar__btn {
-      display: none;
+    .header__nav {
+        width: 100%;
+        /* margin: 0; */
     }
-  
+
+    .logo {
+        width: 20%;
+    }
+
+
+    .nav__menu {
+        position: fixed;
+        width: 87%;
+        justify-content: center;
+        background-color: #222;
+        margin-left: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        top: 60px;
+        left: -100%;
+        transition: right .3s;
+        line-height: 1.8rem;
+    }
+
     .menu__btn {
-     position: fixed;
-     top: 0;
-     right: 0;
-     z-index: 99;
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 15px;
+        padding-right: 20px;
+        font-size: 30px;
+    }
 
-    } */
-  
-  
-  /* @media (min-width: 522px) {
-    .textcontainer .title{
-      font-size: 75px;
+
+    .show--menu {
+        left: 0;
     }
-  
-    .textcontainer .text{
-      font-size: 32px;
+
+    .cerrar__btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #fff;
+        font-size: 32px;
+        display: flex;
     }
-  }
-  
-  @media (min-width: 1024px) {
-    .textcontainer .title{
-      font-size: 50px;
+
+    .nav__link {
+        color: #fff;
     }
-  
-    .textcontainer .text{
-      font-size: 100px;
+
+    .nav__list {
+        flex-direction: column;
     }
-  
-    /* .hero__description {
-      font-size: 42px;
-    }
-  } */ 
+
+
+
+
 
 
     /*Hero*/
@@ -1242,19 +1155,23 @@ button {
         font-family: var(--cur-font);
         color: var(--alt-color);
         font-size: 1.1rem;
-    } 
+    }
+
+
 
 
     /*SECCION SOBRE MI 2da section*/
 
 
-     .container__sobremi{
+
+
+    .container__sobremi {
         width: 100%;
         margin: unset;
     }
 
     .sobremi__title {
-        width: 20%;
+        width: 25%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1262,11 +1179,15 @@ button {
         margin-top: unset;
         margin-left: unset;
         transform: rotate(0.75turn);
-    } 
+    }
 
+
+    .sobremi__img {
+        width: 25%;
+    }
 
     .sobremi__text {
-        width: 60%;
+        width: 50%;
         padding-top: 20px;
         margin-right: 0;
     }
@@ -1302,11 +1223,15 @@ button {
         border-radius: 50%;
         width: 50px;
         height: 35px;
-    } 
+    }
+
+
 
 
 
     /*ESTE ES LA 3ra SECTION EDUCACION*/
+
+
 
 
 
@@ -1363,16 +1288,15 @@ button {
         flex-direction: column;
         padding-left: 20px;
         margin-left: 10px;
-    } 
+    }
 
 
 
     /*TITULO*/
 
 
-
     .educacion__title {
-        width: 34%;
+        width: 20%;
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -1382,7 +1306,17 @@ button {
         position: relative;
         top: 190px;
     }
+    
+    .container__formacion{
+        width: 60%;
+        padding-right: 100px;
+    }
 
+    .container__experiencia{
+        display: none
+    };
+
+    
     .educacion__title span {
         font-size: var(--big-font);
         font-family: var(--title-font);
@@ -1390,13 +1324,18 @@ button {
         text-align: right;
         line-height: 1.15;
     }
-
+    
     .educacion__title .alt {
         color: var(--alt-color);
-    } 
+    }
+
+
+
 
 
     /*ESTE ES LA 4ra SECTION* HABILIDADES*/
+
+
 
 
 
@@ -1434,11 +1373,43 @@ button {
     }
 
 
-    /*esta es la quinta seccion proyectos*/
+
+
+
+
+    /*esta es la 5ta seccion seccion proyectos*/
+
+
+
 
     .case-study-gallery {
-        width: 100%;
 
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .case-study {
+        width: 78%;
+    }
+
+
+    .proyectos__title {
+        width: 22%;
+        transform: rotate(0.75turn);
+        /* position: relative; */
+        top: 25px;
+        margin-right: unset;
+    }
+
+    .titleone {
+        font-family: var(--title-font);
+        color: var(--primary-color);
+
+    }
+
+    .p1 {
+        display: none;
     }
 
 
@@ -1446,7 +1417,10 @@ button {
 
 
 
+
     /*ESTE ES LA 6ta SECTION CONTACTO*/
+
+
 
 
 
@@ -1494,11 +1468,11 @@ button {
     /*footer*/
 
 
-
     .contain__footer {
         width: 100%;
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
         margin: 0 auto;
     }
 
@@ -1513,7 +1487,52 @@ button {
     }
 
     .parrafo {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
         font-size: 0.7rem;
-         font-weight: bold; 
+        font-weight: bold;
     }
- }
+
+}
+
+
+
+/*   
+  @media (min-width: 768px) {
+      .cerrar__btn {
+        display: none;
+      }
+    
+      .menu__btn {
+       position: fixed;
+       top: 0;
+       right: 0;
+       z-index: 99;
+  
+      } */
+
+
+/* @media (min-width: 522px) {
+      .textcontainer .title{
+        font-size: 75px;
+      }
+    
+      .textcontainer .text{
+        font-size: 32px;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .textcontainer .title{
+        font-size: 50px;
+      }
+    
+      .textcontainer .text{
+        font-size: 100px;
+      }
+    
+      /* .hero__description {
+        font-size: 42px;
+      }
+    } */
