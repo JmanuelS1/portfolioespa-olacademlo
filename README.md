@@ -54,7 +54,7 @@ Disfrutalo
 
 # Agradecimientos
 
-A todas las personas que me apoyan, mis compañeros con los que comparti muchas noches y madrugadas de estudio, y al excelente mentor, [Jesús Fernández](https://jsfdz.com/) que me trasmitio parte de su saber.
+A todas las personas que me apoyan, mis compañeros con los que comparti muchas noches y madrugadas de estudio, y al excelente mentor, [Jesús Fernández] (https://jsfdz.com/) que me trasmitio parte de su saber.
 
 
 
