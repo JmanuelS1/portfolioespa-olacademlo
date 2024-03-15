@@ -6,4 +6,11 @@ El proyecto es un portafolio personal desarrollado utilizando HTML, CSS y JavaSc
 
 
 
-#
+#AUTOR
+
+JmanuelS1
+
+#Sobre Mi
+
+Soy Desarrollador Front-end y Administrador de RR.HH. después de conocer por medio de mis amigos algo sobre programación me interesé bastante por aprender y definitivamente me pasé al mundo de la PROGRAMACIÓN donde me di cuenta que disfruto bastante tanto obteniendo mis experiencias personales como creando nuevas experiencias para los usuarios.
+
