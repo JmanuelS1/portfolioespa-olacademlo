@@ -1071,10 +1071,10 @@ main {
 
     .nav__menu {
         position: fixed;
-        width: 87%;
+        width: 50%;
         justify-content: center;
         background-color: #222;
-        margin-left: 46px;
+        margin-left: 0px;
         padding-top: 50px;
         padding-bottom: 50px;
         top: 60px;
@@ -1091,6 +1091,11 @@ main {
         padding-top: 15px;
         padding-right: 20px;
         font-size: 30px;
+    }
+
+    .nav__list{
+        font-size: var(--small-font);
+        padding-left: 30px;
     }
 
 
